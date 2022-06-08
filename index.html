@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <video id="v1" playsinline autoplay muted></video>
+  <video id="v2" playsinline loop></video>
+
+  <div>
+    <button id="startCamera">开启摄像头</button>
+    <button id="stopCamera">停止摄像头</button>
+    <button id="record" disabled>录制</button>
+    <button id="play" disabled>播放</button>
+    <button id="download" disabled>下载视频</button>
+  </div>
+  <div> 录制使用的视频格式: <select id="codecSelect" disabled></select> </div>
+  <div>
+    <h4>视频设置</h4>
+    <p>回声消除: <input type="checkbox" id="echoCancellation"></p>
+  </div>
+  <div> <span id="msg" style="font-size:smaller"></span> </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
